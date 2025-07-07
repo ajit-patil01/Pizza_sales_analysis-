@@ -44,6 +44,8 @@ SELECT HOUR (order_time) as order_hours, COUNT(DISTINCT order_id) as total_order
 from pizza_sales
 group by HOUR (order_time) ;
 
+6. 
+
 
 
 
