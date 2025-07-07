@@ -9,13 +9,18 @@ The Pizza Sales Analysis project demonstrates the power of combining SQL and Exc
 
 The analysis focuses on identifying sales patterns, understanding customer preferences, and tracking business KPIs such as:
 
-Total Revenue
+- Total Revenue
 
-Average Order Value
+- Average Order Value
 
-Total Pizzas Sold
+- Total Pizzas Sold
 
-Average Pizzas per Order
+- Average Pizzas per Order
 
-Visualizations such as revenue trends, best-selling items, category-wise distribution, and time-based ordering heatmaps offer a holistic view of pizza sales performance.
+Visualizations such as :
+- Percentage Sales by category
+- Percentage Sales by Size
+- Pizza sold by Category
+- Top 5 Best and Worst Seller
+
 
