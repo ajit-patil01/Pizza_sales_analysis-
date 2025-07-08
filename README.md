@@ -28,14 +28,12 @@ Visualizations such as :
 
 1.  SQL query to get Total Revenue: 
  ```sql
-select round(Sum(total_price),2) as Total_revenue from pizza_sales;
-```
+select round(Sum(total_price),2) as Total_revenue from pizza_sales; ```
 
 2. 	SQL query to get Average Order Value: 
    ```sql
    	select  (sum(total_price) / count(distinct order_id))  as Avg_order_value
-from pizza_sales;
-```
+from pizza_sales; ```
 
 4. SQL query to get Total Pizza Sold. : 
    ```sql
