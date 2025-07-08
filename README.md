@@ -38,13 +38,12 @@ from pizza_sales;
  ```
 
 3. SQL query to get Total Pizza Sold.: 
-   ```sql
+```sql
 SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales;
 ```
 
-
 4. SQL query to get Total Orders:
-``` 
+ ```sql
 SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales;
 ```
 
