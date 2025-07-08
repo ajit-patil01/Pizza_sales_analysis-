@@ -37,19 +37,20 @@ select round(Sum(total_price),2) as Total_revenue from pizza_sales;
 from pizza_sales;
  ```
 
-3. SQL query to get Total Pizza Sold. : 
+3. SQL query to get Total Pizza Sold.: 
    ```sql
 SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales;
 ```
 
 
-4. SQL query to get Total Orders: 
-```sql
+4. SQL query to get Total Orders:
+``` 
 SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales;
 ```
 
-5. SQL query to get  Get hourly trend of Pizza sale : 
-```sql SELECT HOUR (order_time) as order_hours, COUNT(DISTINCT order_id) as total_orders
+5. SQL query to get  Get hourly trend of Pizza sale: 
+```sql
+SELECT HOUR (order_time) as order_hours, COUNT(DISTINCT order_id) as total_orders
 from pizza_sales
 group by HOUR (order_time) ;
 ```
