@@ -39,24 +39,25 @@ from pizza_sales;
 
 4. SQL query to get Total Pizza Sold. : 
    ```sql
-SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales; ```
+SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales;```
 
 
 5. SQL query to get Total Orders : 
 ```sql
-SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales; ```
+SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales;```
 
 6. SQL query to get  Get hourly trend of Pizza sale : 
-SELECT HOUR (order_time) as order_hours, COUNT(DISTINCT order_id) as total_orders
+```sql SELECT HOUR (order_time) as order_hours, COUNT(DISTINCT order_id) as total_orders
 from pizza_sales
-group by HOUR (order_time) ;
+group by HOUR (order_time) ;```
 
-7. SQL Query to get Percentage Sales by Category
+7. SQL Query to get Percentage Sales by Category:
+```sql
 SELECT pizza_category, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
 CAST(SUM(total_price) AS DECIMAL(10,2))*100/(SELECT SUM(total_price)from pizza_sales)
 as pct 
 from pizza_sales
-group by pizza_category ;
+group by pizza_category ;```
 
 8. SQL query to get Percentage of Sales by Pizza Size
    SELECT pizza_size , CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,  -- CAST(... AS DECIMAL(10,2)): This converts the sum (which might be an integer or a float) into a DECIMAL data type.
